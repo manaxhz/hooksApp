@@ -8,6 +8,8 @@ export const Layout = () => {
     const { data, isLoading, hasError } = useFetch(`https://www.breakingbadapi.com/api/quotes/${ counter }`);
     const { author, quote } = !!data && data[0];
     
+    
+
     return (
         <>
             <h1>BreakingBad Quotes</h1>
